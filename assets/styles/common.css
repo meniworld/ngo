@@ -1,0 +1,45 @@
+:root {
+    --text: #130704;
+    --background: #fdf9f7;
+    --primary: #d86538;
+    --secondary: #82e7dd;
+    --accent: #586bdf;
+    --white: #fff;
+    --black: #000;
+}
+
+/* Common button base */
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+/* Primary button */
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+/* Secondary button */
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--text);
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent);
+    color: var(--white);
+}

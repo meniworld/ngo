@@ -1,0 +1,74 @@
+/* Who We Are Section */
+.who-we-are {
+    padding: 80px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.who-title h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.who-title p {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    color: #666;
+    line-height: 1.6;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: #45a049;
+}
+
+.who-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.who-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.who-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.who-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}

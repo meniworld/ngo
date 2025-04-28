@@ -1,0 +1,152 @@
+/* Hero Section */
+.hero-section {
+    margin-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.hero-left,
+.hero-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-right img {
+    height: 300px !important;
+}
+
+.hero-left a {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 10px;
+}
+
+.hero-right {
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.hero-right a {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 10px;
+}
+
+.hero-left img,
+.hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+}
+
+.hero-left a:hover img,
+.hero-right a:hover img {
+    transform: scale(1.05);
+}
+
+.hero-card {
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hero-card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.hero-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    max-width: 90%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.learn-more {
+    background-color: var(--primary-color, #ff5722);
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    margin-top: 10px;
+}
+
+.learn-more:hover {
+    background-color: #e64a19;
+}
+
+.hero-card:hover .hero-content {
+    opacity: 1;
+}
+
+.hero-card:hover p,
+.hero-card:hover .learn-more {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-left,
+    .hero-right {
+        flex: none;
+    }
+
+    .hero-left a,
+    .hero-right a {
+        height: auto;
+    }
+
+    .hero-right {
+        flex-direction: row;
+    }
+
+    .hero-right a {
+        flex: 1;
+    }
+
+    .hero-right img {
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-right {
+        flex-direction: column;
+    }
+}

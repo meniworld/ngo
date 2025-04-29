@@ -1,0 +1,71 @@
+.what-we-do {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.what-we-do-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.activity-card {
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+}
+
+.img-overlay {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-overlay img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.img-overlay:hover img {
+    transform: scale(1.05);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    transition: opacity 0.3s ease;
+}
+
+.img-overlay:hover .overlay-text {
+    opacity: 1;
+}
+
+.activity-card h3 {
+    margin-top: 15px;
+    font-size: 18px;
+}

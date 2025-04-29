@@ -1,0 +1,95 @@
+.latest-section {
+    padding: 60px 20px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.latest-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #222;
+}
+
+.latest-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.latest-card {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.latest-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.latest-card:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.latest-card:hover .overlay {
+    opacity: 1;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 15px 0;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px 20px;
+}
+
+#loadMoreBtn {
+    margin-top: 40px;
+    padding: 12px 30px;
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+#loadMoreBtn:hover {
+    background: #444;
+}
+
+.hidden {
+    display: none;
+}

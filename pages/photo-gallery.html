@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NGO - Privacy Policy</title>
+    <title>NGO - Photo Gallery</title>
     <link rel="stylesheet" href="../assets/styles/common.css">
     <link rel="stylesheet" href="../assets/styles/navbar.css">
     <link rel="stylesheet" href="../assets/styles/hero-section.css">
@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="../assets/styles/subscribe-section.css">
     <link rel="stylesheet" href="../assets/styles/footer-section.css">
     <link rel="stylesheet" href="../assets/styles/privacy-policy.css">
+    <link rel="stylesheet" href="../assets/styles/contact.css">
+    <link rel="stylesheet" href="../assets/styles/compliant.css">
+    <link rel="stylesheet" href="../assets/styles/photo-gallery.css">
 </head>
 
 <body>
@@ -91,86 +94,42 @@
     </nav>
 
     <!-- NAV BAR END -->
-    <div class="privacy-container">
 
-        <!-- Header Section -->
-        <div class="privacy-header">
-            <h1>Privacy Policy</h1>
-            <p>Welcome to our privacy policy page. We value your privacy and are committed to protecting your personal
-                data. Please read the following information carefully.</p>
+    <section class="gallery-section">
+        <div class="gallery-header">
+            <h1>Our Photo Gallery</h1>
+            <p>Explore memories and moments from our events, field visits, and awareness campaigns.</p>
         </div>
 
-        <!-- Content Section -->
-        <div class="privacy-content">
-
-            <!-- Section 1: Information Collection -->
-            <div class="privacy-section">
-                <h2>Information We Collect</h2>
-                <p>We collect several types of information for various purposes to provide and improve our service to
-                    you. The types of information we may collect include:</p>
-                <ul>
-                    <li><strong>Personal Data:</strong> Name, email address, phone number, etc.</li>
-                    <li><strong>Usage Data:</strong> Information on how you use our service, including IP address,
-                        browser type, etc.</li>
-                    <li><strong>Cookies and Tracking Data:</strong> We use cookies to track activity on our website and
-                        improve user experience.</li>
-                </ul>
-            </div>
-
-            <!-- Section 2: How We Use Your Information -->
-            <div class="privacy-section">
-                <h2>How We Use Your Information</h2>
-                <p>We use the collected data for various purposes, including:</p>
-                <ul>
-                    <li>To provide and maintain our services.</li>
-                    <li>To notify you about changes to our services.</li>
-                    <li>To improve and personalize user experience.</li>
-                    <li>To communicate with you and provide customer support.</li>
-                </ul>
-            </div>
-
-            <!-- Section 3: Data Sharing -->
-            <div class="privacy-section">
-                <h2>Data Sharing</h2>
-                <p>We may share your information in the following circumstances:</p>
-                <ul>
-                    <li><strong>Third-party Service Providers:</strong> We may share data with trusted third parties who
-                        assist us in operating our services.</li>
-                    <li><strong>Legal Requirements:</strong> We may disclose your personal data if required by law or in
-                        response to legal requests.</li>
-                </ul>
-            </div>
-
-            <!-- Section 4: Data Security -->
-            <div class="privacy-section">
-                <h2>Data Security</h2>
-                <p>We take the security of your personal information seriously. We implement appropriate technical and
-                    organizational measures to protect your data from unauthorized access or disclosure.</p>
-            </div>
-
-            <!-- Section 5: Your Data Protection Rights -->
-            <div class="privacy-section">
-                <h2>Your Data Protection Rights</h2>
-                <p>Depending on your location, you may have certain rights regarding your personal data, including:</p>
-                <ul>
-                    <li>Right to access your data.</li>
-                    <li>Right to correct or delete your data.</li>
-                    <li>Right to restrict or object to processing.</li>
-                    <li>Right to data portability.</li>
-                </ul>
-            </div>
-
+        <div class="tab-buttons">
+            <button class="active" onclick="filterGallery('all')">All</button>
+            <button onclick="filterGallery('events')">Events</button>
+            <button onclick="filterGallery('campaigns')">Campaigns</button>
+            <button onclick="filterGallery('visits')">Field Visits</button>
         </div>
 
-        <!-- Footer Section -->
-        <div class="privacy-footer">
-            <p>For any questions regarding our privacy policy, feel free to contact us at
-                <strong>support@abc.com</strong>
-            </p>
-            <a href="contact.html" class="contact-btn">Contact Us</a>
+        <div class="gallery-grid">
+            <!-- Example Images (Use your own images or dynamic backend) -->
+            <div class="gallery-item events show">
+                <img src="../assets/images/10573150.png" alt="Event 1">
+            </div>
+            <div class="gallery-item campaigns show">
+                <img src="../assets/images/10573150.png" alt="Campaign 1">
+            </div>
+            <div class="gallery-item visits show">
+                <img src="../assets/images/closeup-diverse-people-joining-their-hands.jpg" alt="Visit 1">
+            </div>
+            <div class="gallery-item events show">
+                <img src="../assets/images/closeup-diverse-people-joining-their-hands.jpg" alt="Event 2">
+            </div>
+            <div class="gallery-item campaigns show">
+                <img src="../assets/images/closeup-diverse-people-joining-their-hands.jpg" alt="Campaign 2">
+            </div>
+            <div class="gallery-item visits show">
+                <img src="../assets/images/top-view-origami-chain-people-with-globe.jpg" alt="Visit 2">
+            </div>
         </div>
-    </div>
-
+    </section>
 
     <!-- Footer Section Start-->
     <footer class="site-footer">
@@ -200,11 +159,14 @@
                 <h4>Explore</h4>
                 <div class="footer-links">
                     <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/3794/3794297.png" alt="Blog"> Blog</a>
-                    <a href="advocacy.html"><img src="https://cdn-icons-png.flaticon.com/24/3135/3135715.png" alt="Advocacy">
+                    <a href="advocacy.html"><img src="https://cdn-icons-png.flaticon.com/24/3135/3135715.png"
+                            alt="Advocacy">
                         Advocacy</a>
-                    <a href="innovation.html"><img src="https://cdn-icons-png.flaticon.com/24/201/201623.png" alt="Innovation">
+                    <a href="innovation.html"><img src="https://cdn-icons-png.flaticon.com/24/201/201623.png"
+                            alt="Innovation">
                         Innovation</a>
-                    <a href="e-tender.html"><img src="https://cdn-icons-png.flaticon.com/24/1828/1828911.png" alt="E-Tender">
+                    <a href="e-tender.html"><img src="https://cdn-icons-png.flaticon.com/24/1828/1828911.png"
+                            alt="E-Tender">
                         E-Tender</a>
                     <a href="photo-gallery.html">
                         <img src="https://cdn-icons-png.flaticon.com/24/1829/1829586.png" alt="Photo Gallery">
@@ -276,6 +238,7 @@
 
     <script src="../assets/scripts/navbar.js"></script>
     <script src="../assets/scripts/latest-section.js"></script>
+    <script src="../assets/scripts/photo-gallery.js"></script>
 </body>
 
 </html>

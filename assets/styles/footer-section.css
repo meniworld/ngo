@@ -76,6 +76,10 @@
     color: var(--text);
 }
 
+.footer-links a:hover {
+    color: var(--primary);
+}
+
 .footer-links a img {
     width: 20px;
     height: 20px;

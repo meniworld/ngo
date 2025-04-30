@@ -6,6 +6,9 @@
     --accent: #586bdf;
     --white: #fff;
     --black: #000;
+    --card-bg: #ffffff;
+    --input-border: #ccc;
+    --hover-bg: #f0f0f0;
 }
 
 * {

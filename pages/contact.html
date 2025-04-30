@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../assets/styles/subscribe-section.css">
     <link rel="stylesheet" href="../assets/styles/footer-section.css">
     <link rel="stylesheet" href="../assets/styles/privacy-policy.css">
+    <link rel="stylesheet" href="../assets/styles/contact.css">
 </head>
 
 <body>
@@ -91,62 +92,102 @@
     </nav>
 
     <!-- NAV BAR END -->
-    <section class="privacy-hero">
-        <div class="container">
-            <h1>Privacy Policy</h1>
-            <p>Your trust is our priority. Here's how we protect your information.</p>
-        </div>
-    </section>
+    <div class="contact-container">
 
-    <section class="privacy-wrapper">
-        <div class="policy-card">
-            <h2>1. Introduction</h2>
-            <p>We value your privacy. This policy describes how we handle your personal data with responsibility and
-                transparency.</p>
+        <!-- Header Section -->
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+            <p>We're here to help. Get in touch with us for any inquiries or assistance. We'll be happy to assist you
+                with whatever you need!</p>
         </div>
 
-        <div class="policy-card">
-            <h2>2. Information We Collect</h2>
-            <p>We may collect your name, email, phone number, and any information you share when interacting with us
-                through forms or communication channels.</p>
-        </div>
+        <!-- Form Section -->
+        <div class="form-container">
 
-        <div class="policy-card">
-            <h2>3. How We Use Your Information</h2>
-            <ul>
-                <li>To provide services and updates</li>
-                <li>To respond to your inquiries</li>
-                <li>To improve user experience</li>
-            </ul>
-        </div>
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send us a message</h2>
+                <form>
+                    <label for="query-type">Query Type</label>
+                    <select id="query-type" name="query-type" required>
+                        <option value="">Select an option</option>
+                        <option>General Inquiry</option>
+                        <option>Appointment</option>
+                        <option>Feedback</option>
+                        <option>Other</option>
+                    </select>
 
-        <div class="policy-card">
-            <h2>4. Sharing Your Data</h2>
-            <p>We do not sell your information. It is shared only with trusted service providers under strict
-                confidentiality for operational purposes.</p>
-        </div>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required />
 
-        <div class="policy-card">
-            <h2>5. Data Protection</h2>
-            <p>We implement technical and organizational safeguards to protect your data against unauthorized access,
-                alteration, or misuse.</p>
-        </div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required />
 
-        <div class="policy-card">
-            <h2>6. Your Rights</h2>
-            <p>You can request to view, modify, or delete your personal data by contacting us at <a
-                    href="mailto:info@brac.net">info@brac.net</a>.</p>
-        </div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required />
 
-        <div class="policy-card">
-            <h2>7. Updates to This Policy</h2>
-            <p>We may revise this policy as needed. Updates will be posted on this page with a new effective date.</p>
-        </div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
 
-        <div class="policy-card policy-closing">
-            <p>Still have questions? <a href="/contact.html">Contact us here</a> — we’re happy to help!</p>
+                    <button type="submit" class="btn-primary">Submit</button>
+                </form>
+
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111392.png" alt="Facebook" /></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" /></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                            alt="Instagram" /></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" /></a>
+                </div>
+            </div>
+
+            <!-- Branch Info -->
+            <div class="branch-info">
+                <h2>Our Locations</h2>
+
+                <!-- Branch 1 -->
+                <div class="location">
+                    <h3>Dhaka Office</h3>
+                    <p>Banani, Dhaka, Bangladesh</p>
+                    <p>Email: dhaka@abc.com</p>
+                    <p>Phone: +8801234567890</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+                </div>
+
+                <!-- Branch 2 -->
+                <div class="location">
+                    <h3>Chittagong Office</h3>
+                    <p>Agrabad, Chittagong, Bangladesh</p>
+                    <p>Email: chittagong@abc.com</p>
+                    <p>Phone: +8809876543210</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+                </div>
+                <div class="location">
+                    <h3>Bogura Office</h3>
+                    <p>Gabtoli, Bogura, Bangladesh</p>
+                    <p>Email: bogra@abc.com</p>
+                    <p>Phone: +8809876543210</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+                </div>
+                <div class="location">
+                    <h3>USA Office</h3>
+                    <p>Kisminee, USA</p>
+                    <p>Email: usa@abc.com</p>
+                    <p>Phone: +109876543210</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+                </div>
+                <div class="location">
+                    <h3>Dubai Office</h3>
+                    <p>Dubai</p>
+                    <p>Email: dubai@abc.com</p>
+                    <p>Phone: +109876543210</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+                </div>
+
+            </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer Section Start-->
     <footer class="site-footer">

@@ -6,6 +6,9 @@
     --accent: #586bdf;
     --white: #fff;
     --black: #000;
+    --card-bg: #ffffff;
+    --input-border: #ccc;
+    --hover-bg: #f0f0f0;
 }
 
 * {
@@ -38,21 +41,21 @@ a {
 /* Primary button */
 .btn-primary {
     background-color: var(--primary);
-    color: var(--white);
+    color: var(--white) !important;
 }
 
 .btn-primary:hover {
     background-color: var(--accent);
-    color: var(--white);
+    color: var(--white) !important;
 }
 
 /* Secondary button */
 .btn-secondary {
     background-color: var(--secondary);
-    color: var(--text);
+    color: var(--text) !important;
 }
 
 .btn-secondary:hover {
     background-color: var(--accent);
-    color: var(--white);
+    color: var(--white) !important;
 }

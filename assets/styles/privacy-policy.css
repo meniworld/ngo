@@ -1,0 +1,108 @@
+.privacy-container {
+    max-width: 1200px;
+    margin: 180px auto;
+    padding: 30px;
+}
+
+/* Header Section */
+.privacy-header {
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 80px 0;
+    margin-bottom: 50px;
+    border-radius: 8px;
+}
+
+.privacy-header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.privacy-header p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Content Section */
+.privacy-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.privacy-section {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-section h2 {
+    font-size: 28px;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.privacy-section p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.privacy-section ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.privacy-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+.privacy-footer {
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 20px 0;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+/* Contact Button */
+.contact-btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--white);
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: var(--secondary);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .privacy-header h1 {
+        font-size: 32px;
+    }
+
+    .privacy-header p {
+        font-size: 18px;
+    }
+
+    .privacy-content {
+        padding: 15px;
+    }
+
+    .privacy-section {
+        padding: 20px;
+    }
+}

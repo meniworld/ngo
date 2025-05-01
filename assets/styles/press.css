@@ -1,0 +1,207 @@
+/* General Styles */
+.press-page {
+    max-width: 1200px;
+    margin: 180px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Page Banner */
+.press-banner img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* Press Articles Section */
+.press-articles h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.press-articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.press-article {
+    background-color: var(--background);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.press-article:hover {
+    transform: translateY(-8px);
+}
+
+.press-article img {
+    width: 100%;
+    height: 180px;
+}
+
+.press-content {
+    padding: 20px;
+}
+
+.press-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.press-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+/* Press Inquiry Section */
+.press-inquiry {
+    background-color: var(--secondary);
+    padding: 40px;
+    margin-top: 60px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.press-inquiry h2 {
+    font-size: 28px;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.inquiry-form button {
+    padding: 12px 25px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.inquiry-form button:hover {
+    background-color: var(--accent);
+}
+
+/* Media Kit Section */
+.media-kit {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.media-kit h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.download-button {
+    font-size: 16px;
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: var(--accent);
+}
+
+/* Media Queries for Responsiveness */
+@media(max-width: 768px) {
+    .press-page {
+        padding: 15px;
+    }
+
+    .press-articles h2 {
+        font-size: 28px;
+    }
+
+    .press-articles-container {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .press-article img {
+        height: 200px;
+    }
+
+    .press-inquiry h2 {
+        font-size: 24px;
+    }
+
+    .inquiry-form input,
+    .inquiry-form textarea {
+        padding: 12px;
+    }
+
+    .media-kit h2 {
+        font-size: 24px;
+    }
+
+    .download-button {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+}
+
+@media(max-width: 480px) {
+    .press-articles h2 {
+        font-size: 22px;
+    }
+
+    .press-content h3 {
+        font-size: 18px;
+    }
+
+    .press-date {
+        font-size: 12px;
+    }
+
+    .read-more {
+        font-size: 12px;
+    }
+
+    .inquiry-form button {
+        font-size: 14px;
+    }
+
+    .media-kit h2 {
+        font-size: 20px;
+    }
+
+    .download-button {
+        font-size: 12px;
+    }
+}

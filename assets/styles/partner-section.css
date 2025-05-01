@@ -1,10 +1,10 @@
-.partner-section {
+.partner-section-container {
     padding: 60px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
 
-.partner-section h2 {
+.partner-section-container h2 {
     font-size: 32px;
     margin-bottom: 40px;
     font-weight: bold;
@@ -17,7 +17,6 @@
     gap: 30px;
     align-items: center;
     justify-items: center;
-    max-width: 1100px;
     margin: 0 auto;
 }
 

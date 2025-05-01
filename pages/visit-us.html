@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NGO - Photo Gallery</title>
+    <title>NGO - Visit Us</title>
     <link rel="stylesheet" href="../assets/styles/common.css">
     <link rel="stylesheet" href="../assets/styles/navbar.css">
     <link rel="stylesheet" href="../assets/styles/hero-section.css">
@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="../assets/styles/privacy-policy.css">
     <link rel="stylesheet" href="../assets/styles/contact.css">
     <link rel="stylesheet" href="../assets/styles/compliant.css">
-    <link rel="stylesheet" href="../assets/styles/photo-gallery.css">
+    <link rel="stylesheet" href="../assets/styles/partner-with-us.css">
+    <link rel="stylesheet" href="../assets/styles/visit-us.css">
 </head>
 
 <body>
@@ -95,39 +96,62 @@
 
     <!-- NAV BAR END -->
 
-    <section class="gallery-section">
-        <div class="gallery-header">
-            <h1>Our Photo Gallery</h1>
-            <p>Explore memories and moments from our events, field visits, and awareness campaigns.</p>
+    <section class="visit-section">
+        <div class="visit-header">
+            <h1>Visit Us</h1>
+            <p>You are always welcome at our locations. Find your nearest branch and drop by for a chat or support.</p>
         </div>
 
-        <div class="tab-buttons">
-            <button class="active" onclick="filterGallery('all')">All</button>
-            <button onclick="filterGallery('events')">Events</button>
-            <button onclick="filterGallery('campaigns')">Campaigns</button>
-            <button onclick="filterGallery('visits')">Field Visits</button>
-        </div>
+        <div class="visit-locations">
 
-        <div class="gallery-grid">
-            <!-- Example Images (Use your own images or dynamic backend) -->
-            <div class="gallery-item events show">
-                <img src="../assets/images/10573150.png" alt="Event 1">
+            <!-- Bangladesh Office -->
+            <div class="location-box">
+                <div class="location-info">
+                    <div class="location-details">
+                        <h3>Dhaka, Bangladesh</h3>
+                        <p><strong>Address:</strong> House #00, Road #00, Dhanmondi, Dhaka</p>
+                        <p><strong>Phone:</strong> +880 1XXXXXXXXX</p>
+                        <p><strong>Email:</strong> dhaka@ngo.org</p>
+                    </div>
+                    <div class="map-frame">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Dhaka,%20Bangladesh&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item campaigns show">
-                <img src="../assets/images/10573150.png" alt="Campaign 1">
+
+            <!-- Chittagong Office -->
+            <div class="location-box">
+                <div class="location-info">
+                    <div class="location-details">
+                        <h3>Chittagong, Bangladesh</h3>
+                        <p><strong>Address:</strong> GEC Circle, Chittagong</p>
+                        <p><strong>Phone:</strong> +880 1XXXXXXXXX</p>
+                        <p><strong>Email:</strong> ctg@ngo.org</p>
+                    </div>
+                    <div class="map-frame">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Chittagong,%20Bangladesh&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item visits show">
-                <img src="../assets/images/closeup-diverse-people-joining-their-hands.jpg" alt="Visit 1">
+
+            <!-- USA Office -->
+            <div class="location-box">
+                <div class="location-info">
+                    <div class="location-details">
+                        <h3>New York, USA</h3>
+                        <p><strong>Address:</strong> 123 NGO Street, Manhattan, NY</p>
+                        <p><strong>Phone:</strong> +1 123-456-7890</p>
+                        <p><strong>Email:</strong> usa@ngo.org</p>
+                    </div>
+                    <div class="map-frame">
+                        <iframe
+                            src="https://maps.google.com/maps?q=New%20York,%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item events show">
-                <img src="../assets/images/closeup-diverse-people-joining-their-hands.jpg" alt="Event 2">
-            </div>
-            <div class="gallery-item campaigns show">
-                <img src="../assets/images/closeup-diverse-people-joining-their-hands.jpg" alt="Campaign 2">
-            </div>
-            <div class="gallery-item visits show">
-                <img src="../assets/images/top-view-origami-chain-people-with-globe.jpg" alt="Visit 2">
-            </div>
+
         </div>
     </section>
 
@@ -135,12 +159,14 @@
     <footer class="site-footer">
         <!-- Top Quick Links with Icons -->
         <div class="footer-top">
-            <a href="partner-with-us.html"><img src="https://cdn-icons-png.flaticon.com/24/929/929416.png" alt="Partner"> Partner with
+            <a href="partner-with-us.html"><img src="https://cdn-icons-png.flaticon.com/24/929/929416.png"
+                    alt="Partner"> Partner with
                 us |</a>
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/3064/3064197.png" alt="Career"> Career |</a>
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/3135/3135765.png" alt="Internship">
                 Internship |</a>
-            <a href="visit-us.html"><img src="https://cdn-icons-png.flaticon.com/24/684/684908.png" alt="Visit"> Visit us</a>
+            <a href="visit-us.html"><img src="https://cdn-icons-png.flaticon.com/24/684/684908.png" alt="Visit"> Visit
+                us</a>
         </div>
 
         <!-- Center Footer Content -->
@@ -238,7 +264,6 @@
 
     <script src="../assets/scripts/navbar.js"></script>
     <script src="../assets/scripts/latest-section.js"></script>
-    <script src="../assets/scripts/photo-gallery.js"></script>
 </body>
 
 </html>

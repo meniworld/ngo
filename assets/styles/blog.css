@@ -17,6 +17,9 @@
 
 /* Category Filter */
 .category-filter {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
     text-align: center;
     margin-bottom: 40px;
     padding: 30px;

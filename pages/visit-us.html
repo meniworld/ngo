@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NGO - Contact</title>
+    <title>NGO - Visit Us</title>
     <link rel="stylesheet" href="../assets/styles/common.css">
     <link rel="stylesheet" href="../assets/styles/navbar.css">
     <link rel="stylesheet" href="../assets/styles/hero-section.css">
@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="../assets/styles/footer-section.css">
     <link rel="stylesheet" href="../assets/styles/privacy-policy.css">
     <link rel="stylesheet" href="../assets/styles/contact.css">
+    <link rel="stylesheet" href="../assets/styles/compliant.css">
+    <link rel="stylesheet" href="../assets/styles/partner-with-us.css">
+    <link rel="stylesheet" href="../assets/styles/visit-us.css">
 </head>
 
 <body>
@@ -99,113 +102,78 @@
     </nav>
 
     <!-- NAV BAR END -->
-    <div class="contact-container">
 
-        <!-- Header Section -->
-        <div class="contact-header">
-            <h1>Contact Us</h1>
-            <p>We're here to help. Get in touch with us for any inquiries or assistance. We'll be happy to assist you
-                with whatever you need!</p>
+    <section class="visit-section">
+        <div class="visit-header">
+            <h1>Visit Us</h1>
+            <p>You are always welcome at our locations. Find your nearest branch and drop by for a chat or support.</p>
         </div>
 
-        <!-- Form Section -->
-        <div class="form-container">
+        <div class="visit-locations">
 
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <h2>Send us a message</h2>
-                <form>
-                    <label for="query-type">Query Type</label>
-                    <select id="query-type" name="query-type" required>
-                        <option value="">Select an option</option>
-                        <option>General Inquiry</option>
-                        <option>Appointment</option>
-                        <option>Feedback</option>
-                        <option>Other</option>
-                    </select>
-
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required />
-
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required />
-
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required />
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <button type="submit" class="btn-primary">Submit</button>
-                </form>
-
-                <!-- Social Media Icons -->
-                <div class="social-icons">
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111392.png" alt="Facebook" /></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" /></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
-                            alt="Instagram" /></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" /></a>
+            <!-- Bangladesh Office -->
+            <div class="location-box">
+                <div class="location-info">
+                    <div class="location-details">
+                        <h3>Dhaka, Bangladesh</h3>
+                        <p><strong>Address:</strong> House #00, Road #00, Dhanmondi, Dhaka</p>
+                        <p><strong>Phone:</strong> +880 1XXXXXXXXX</p>
+                        <p><strong>Email:</strong> dhaka@ngo.org</p>
+                    </div>
+                    <div class="map-frame">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Dhaka,%20Bangladesh&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
                 </div>
             </div>
 
-            <!-- Branch Info -->
-            <div class="branch-info">
-                <h2>Our Locations</h2>
-
-                <!-- Branch 1 -->
-                <div class="location">
-                    <h3>Dhaka Office</h3>
-                    <p>Banani, Dhaka, Bangladesh</p>
-                    <p>Email: dhaka@abc.com</p>
-                    <p>Phone: +8801234567890</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+            <!-- Chittagong Office -->
+            <div class="location-box">
+                <div class="location-info">
+                    <div class="location-details">
+                        <h3>Chittagong, Bangladesh</h3>
+                        <p><strong>Address:</strong> GEC Circle, Chittagong</p>
+                        <p><strong>Phone:</strong> +880 1XXXXXXXXX</p>
+                        <p><strong>Email:</strong> ctg@ngo.org</p>
+                    </div>
+                    <div class="map-frame">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Chittagong,%20Bangladesh&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
                 </div>
-
-                <!-- Branch 2 -->
-                <div class="location">
-                    <h3>Chittagong Office</h3>
-                    <p>Agrabad, Chittagong, Bangladesh</p>
-                    <p>Email: chittagong@abc.com</p>
-                    <p>Phone: +8809876543210</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
-                </div>
-                <div class="location">
-                    <h3>Bogura Office</h3>
-                    <p>Gabtoli, Bogura, Bangladesh</p>
-                    <p>Email: bogra@abc.com</p>
-                    <p>Phone: +8809876543210</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
-                </div>
-                <div class="location">
-                    <h3>USA Office</h3>
-                    <p>Kisminee, USA</p>
-                    <p>Email: usa@abc.com</p>
-                    <p>Phone: +109876543210</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
-                </div>
-                <div class="location">
-                    <h3>Dubai Office</h3>
-                    <p>Dubai</p>
-                    <p>Email: dubai@abc.com</p>
-                    <p>Phone: +109876543210</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
-                </div>
-
             </div>
+
+            <!-- USA Office -->
+            <div class="location-box">
+                <div class="location-info">
+                    <div class="location-details">
+                        <h3>New York, USA</h3>
+                        <p><strong>Address:</strong> 123 NGO Street, Manhattan, NY</p>
+                        <p><strong>Phone:</strong> +1 123-456-7890</p>
+                        <p><strong>Email:</strong> usa@ngo.org</p>
+                    </div>
+                    <div class="map-frame">
+                        <iframe
+                            src="https://maps.google.com/maps?q=New%20York,%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
+    </section>
 
     <!-- Footer Section Start-->
     <footer class="site-footer">
         <!-- Top Quick Links with Icons -->
         <div class="footer-top">
-            <a href="partner-with-us.html"><img src="https://cdn-icons-png.flaticon.com/24/929/929416.png" alt="Partner"> Partner with
+            <a href="partner-with-us.html"><img src="https://cdn-icons-png.flaticon.com/24/929/929416.png"
+                    alt="Partner"> Partner with
                 us |</a>
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/3064/3064197.png" alt="Career"> Career |</a>
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/3135/3135765.png" alt="Internship">
                 Internship |</a>
-            <a href="visit-us.html"><img src="https://cdn-icons-png.flaticon.com/24/684/684908.png" alt="Visit"> Visit us</a>
+            <a href="visit-us.html"><img src="https://cdn-icons-png.flaticon.com/24/684/684908.png" alt="Visit"> Visit
+                us</a>
         </div>
 
         <!-- Center Footer Content -->
@@ -224,11 +192,14 @@
                 <h4>Explore</h4>
                 <div class="footer-links">
                     <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/3794/3794297.png" alt="Blog"> Blog</a>
-                    <a href="advocacy.html"><img src="https://cdn-icons-png.flaticon.com/24/3135/3135715.png" alt="Advocacy">
+                    <a href="advocacy.html"><img src="https://cdn-icons-png.flaticon.com/24/3135/3135715.png"
+                            alt="Advocacy">
                         Advocacy</a>
-                    <a href="innovation.html"><img src="https://cdn-icons-png.flaticon.com/24/201/201623.png" alt="Innovation">
+                    <a href="innovation.html"><img src="https://cdn-icons-png.flaticon.com/24/201/201623.png"
+                            alt="Innovation">
                         Innovation</a>
-                    <a href="e-tender.html"><img src="https://cdn-icons-png.flaticon.com/24/1828/1828911.png" alt="E-Tender">
+                    <a href="e-tender.html"><img src="https://cdn-icons-png.flaticon.com/24/1828/1828911.png"
+                            alt="E-Tender">
                         E-Tender</a>
                     <a href="photo-gallery.html">
                         <img src="https://cdn-icons-png.flaticon.com/24/1829/1829586.png" alt="Photo Gallery">

@@ -1,0 +1,80 @@
+.mission-wrapper {
+    max-width: 1200px;
+    margin: 120px auto;
+    padding: 20px;
+}
+
+.mission-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mission-header h1 {
+    font-size: 38px;
+    color: var(--primary);
+}
+
+.mission-header p {
+    font-size: 18px;
+    color: var(--text);
+    margin-top: 10px;
+}
+
+.mission-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mission-block {
+    background-color: var(--background);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.mission-block:hover {
+    transform: translateY(-5px);
+}
+
+.mission-block h2 {
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.mission-block p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+.core-values ul {
+    list-style: inside disc;
+    padding-left: 0;
+}
+
+.core-values ul li {
+    margin: 8px 0;
+}
+
+.mission-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .mission-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .mission-block {
+        flex: 1 1 48%;
+    }
+
+    .core-values {
+        flex: 1 1 100%;
+    }
+}

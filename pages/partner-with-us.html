@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NGO - Photo Gallery</title>
+    <title>NGO - Partner With Us</title>
     <link rel="stylesheet" href="../assets/styles/common.css">
     <link rel="stylesheet" href="../assets/styles/navbar.css">
     <link rel="stylesheet" href="../assets/styles/hero-section.css">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../assets/styles/privacy-policy.css">
     <link rel="stylesheet" href="../assets/styles/contact.css">
     <link rel="stylesheet" href="../assets/styles/compliant.css">
-    <link rel="stylesheet" href="../assets/styles/photo-gallery.css">
+    <link rel="stylesheet" href="../assets/styles/partner-with-us.css">
 </head>
 
 <body>
@@ -95,39 +95,61 @@
 
     <!-- NAV BAR END -->
 
-    <section class="gallery-section">
-        <div class="gallery-header">
-            <h1>Our Photo Gallery</h1>
-            <p>Explore memories and moments from our events, field visits, and awareness campaigns.</p>
+    <section class="partner-section">
+        <div class="partner-header">
+            <h1>Partner With Us</h1>
+            <p>Join hands with our NGO to make a difference. Whether you're an individual, organization, or company,
+                your contribution matters.</p>
         </div>
 
-        <div class="tab-buttons">
-            <button class="active" onclick="filterGallery('all')">All</button>
-            <button onclick="filterGallery('events')">Events</button>
-            <button onclick="filterGallery('campaigns')">Campaigns</button>
-            <button onclick="filterGallery('visits')">Field Visits</button>
+        <div class="partner-types">
+            <div class="partner-type">
+                <h3>Corporate Partnership</h3>
+                <p>Support CSR goals, co-branding opportunities, and long-term impact through meaningful collaboration.
+                </p>
+            </div>
+            <div class="partner-type">
+                <h3>Individual Support</h3>
+                <p>Become a recurring donor, sponsor a project, or volunteer your expertise for social good.</p>
+            </div>
+            <div class="partner-type">
+                <h3>NGO / Organization</h3>
+                <p>Collaborate on shared missions, campaigns, and amplify impact together through joint initiatives.</p>
+            </div>
         </div>
 
-        <div class="gallery-grid">
-            <!-- Example Images (Use your own images or dynamic backend) -->
-            <div class="gallery-item events show">
-                <img src="../assets/images/10573150.png" alt="Event 1">
-            </div>
-            <div class="gallery-item campaigns show">
-                <img src="../assets/images/10573150.png" alt="Campaign 1">
-            </div>
-            <div class="gallery-item visits show">
-                <img src="../assets/images/closeup-diverse-people-joining-their-hands.jpg" alt="Visit 1">
-            </div>
-            <div class="gallery-item events show">
-                <img src="../assets/images/closeup-diverse-people-joining-their-hands.jpg" alt="Event 2">
-            </div>
-            <div class="gallery-item campaigns show">
-                <img src="../assets/images/closeup-diverse-people-joining-their-hands.jpg" alt="Campaign 2">
-            </div>
-            <div class="gallery-item visits show">
-                <img src="../assets/images/top-view-origami-chain-people-with-globe.jpg" alt="Visit 2">
-            </div>
+        <div class="partner-form">
+            <h2>Send Us Your Interest</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" placeholder="Your full name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" placeholder="you@example.com" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" placeholder="+8801XXXXXXXXX" required />
+                </div>
+                <div class="form-group">
+                    <label for="type">Partnership Type *</label>
+                    <select id="type" required>
+                        <option value="">-- Select Type --</option>
+                        <option value="corporate">Corporate</option>
+                        <option value="individual">Individual</option>
+                        <option value="organization">Organization</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" placeholder="Tell us how you'd like to partner..." required></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn-primary">Submit Your Interest</button>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -238,7 +260,6 @@
 
     <script src="../assets/scripts/navbar.js"></script>
     <script src="../assets/scripts/latest-section.js"></script>
-    <script src="../assets/scripts/photo-gallery.js"></script>
 </body>
 
 </html>

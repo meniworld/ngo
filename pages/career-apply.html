@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../assets/styles/faq.css">
     <link rel="stylesheet" href="../assets/styles/blog.css">
     <link rel="stylesheet" href="../assets/styles/career.css">
+    <link rel="stylesheet" href="../assets/styles/career-apply.css">
 </head>
 
 <body>
@@ -102,88 +103,38 @@
 
     <!-- NAV BAR END -->
 
-    <div class="career-page">
+    <div class="job-application-container">
+        <h1>Job Application Form</h1>
+        <form class="job-application-form">
+            <label for="position">Position</label>
+            <select id="position" class="position-field" required>
+                <option value="" disabled>Select Position</option>
+                <option value="Mental Health">Mental Health</option>
+                <option value="Education Officer">Education Officer</option>
+                <option value="Marketing Executive">Marketing Executive</option>
+                <!-- Add more positions as needed -->
+            </select>
 
-        <!-- Header Section -->
-        <div class="career-header">
-            <h1>Join Our Team</h1>
-            <p>Explore exciting opportunities and help shape the future with us.</p>
-        </div>
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" class="name-field" placeholder="John Doe" required>
 
-        <!-- Why Join Us -->
-        <section class="why-join">
-            <h2>Why Join Us?</h2>
-            <div class="reasons">
-                <div class="reason-box">
-                    <h4>Innovative Work</h4>
-                    <p>Be part of cutting-edge projects that make a real-world impact.</p>
-                </div>
-                <div class="reason-box">
-                    <h4>Growth Opportunities</h4>
-                    <p>Accelerate your career with continuous learning and mentorship.</p>
-                </div>
-                <div class="reason-box">
-                    <h4>Inclusive Culture</h4>
-                    <p>Work in a supportive and diverse environment where your voice matters.</p>
-                </div>
-            </div>
-        </section>
+            <label for="email">Email *</label>
+            <input type="email" id="email" class="email-field" placeholder="example@mail.com" required>
 
-        <!-- Benefits & Perks -->
-        <section class="benefits">
-            <h2>Benefits & Perks</h2>
-            <ul>
-                <li>✨ Competitive salary & annual bonuses</li>
-                <li>🧘‍♂️ Flexible working hours & remote options</li>
-                <li>📚 Learning & development budget</li>
-                <li>🏥 Health insurance coverage</li>
-                <li>🎉 Team outings & company retreats</li>
-            </ul>
-        </section>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" class="phone-field" placeholder="+8801234567890">
 
-        <!-- Culture Section -->
-        <section class="culture">
-            <h2>Life at Our Company</h2>
-            <p>We value collaboration, creativity, and commitment. Here’s what it’s like to be on our team:</p>
-            <div class="culture-gallery">
-                <img src="../assets/images/group-happy-diverse-volunteers.jpg" alt="Team event">
-                <img src="../assets/images/group-happy-diverse-volunteers.jpg" alt="Office workspace">
-                <img src="../assets/images/group-happy-diverse-volunteers.jpg" alt="Team brainstorming">
-            </div>
-        </section>
+            <label for="resume">Upload Resume *</label>
+            <input type="file" id="resume" class="resume-field" accept=".pdf,.doc,.docx" required>
 
+            <label for="coverLetter">Cover Letter</label>
+            <textarea id="coverLetter" class="coverLetter-field" rows="5"
+                placeholder="Write something about yourself..."></textarea>
+
+            <button type="submit" class="submit-button">Submit Application</button>
+        </form>
     </div>
 
-    <div class="career-page">
-        <div class="career-header">
-            <h1>Join Our Team</h1>
-            <p>Explore exciting career opportunities and become part of our growing family.</p>
-        </div>
-
-        <div class="job-listings">
-            <div class="job-card">
-                <h2 class="job-title">Medical Health</h2>
-                <p class="job-location">📍 Dhaka, Bangladesh</p>
-                <p class="job-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab nulla dicta alias sapiente modi dolores, nisi consequuntur accusantium perferendis.</p>
-                <a href="career-apply.html" class="apply-btn">Apply Now</a>
-            </div>
-
-            <div class="job-card">
-                <h2 class="job-title">Education Officer</h2>
-                <p class="job-location">📍 Remote</p>
-                <p class="job-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id obcaecati voluptatum veniam vitae in. Est, possimus. Quod cumque labore iure temporibus. Id, sit placeat.</p>
-                <a href="career-apply.html" class="apply-btn">Apply Now</a>
-            </div>
-
-            <div class="job-card">
-                <h2 class="job-title">Digital Marketing Specialist</h2>
-                <p class="job-location">📍 Hybrid (Dhaka & Remote)</p>
-                <p class="job-desc">Plan and execute marketing campaigns, SEO strategies, and boost our digital
-                    presence.</p>
-                <a href="career-apply.html" class="apply-btn">Apply Now</a>
-            </div>
-        </div>
-    </div>
 
 
 
@@ -194,7 +145,8 @@
             <a href="partner-with-us.html"><img src="https://cdn-icons-png.flaticon.com/24/929/929416.png"
                     alt="Partner"> Partner with
                 us |</a>
-            <a href="career.html"><img src="https://cdn-icons-png.flaticon.com/24/3064/3064197.png" alt="Career"> Career |</a>
+            <a href="career.html"><img src="https://cdn-icons-png.flaticon.com/24/3064/3064197.png" alt="Career"> Career
+                |</a>
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/3135/3135765.png" alt="Internship">
                 Internship |</a>
             <a href="visit-us.html"><img src="https://cdn-icons-png.flaticon.com/24/684/684908.png" alt="Visit"> Visit

@@ -1,0 +1,63 @@
+.job-application-container {
+    max-width: 1200px;
+    margin: 180px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.job-application-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary, #007bff);
+}
+
+.job-application-form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.job-application-form input,
+.job-application-form textarea,
+.job-application-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.job-application-form textarea {
+    resize: vertical;
+}
+
+.job-application-form button {
+    margin-top: 30px;
+    background: var(--primary, #007bff);
+    color: #fff;
+    border: none;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.job-application-form button:hover {
+    background: var(--accent, #0056b3);
+}
+
+@media (max-width: 600px) {
+    .job-application-container {
+        padding: 20px;
+        margin: 50px 15px;
+    }
+
+    .job-application-form button {
+        width: 100%;
+    }
+}

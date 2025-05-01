@@ -1,0 +1,179 @@
+.career-page {
+    max-width: 1200px;
+    margin: 180px auto;
+    padding: 20px;
+    color: var(--text);
+}
+
+.career-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.career-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.career-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Job Listings */
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.job-card {
+    background-color: var(--background);
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-6px);
+}
+
+.job-title {
+    font-size: 20px;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.job-location {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.job-desc {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.apply-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.apply-btn:hover {
+    background-color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .career-header h1 {
+        font-size: 28px;
+    }
+
+    .career-header p {
+        font-size: 16px;
+    }
+
+    .job-title {
+        font-size: 18px;
+    }
+
+    .job-desc {
+        font-size: 14px;
+    }
+}
+
+.why-join,
+.benefits,
+.culture {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.why-join h2,
+.benefits h2,
+.culture h2 {
+    font-size: 28px;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.reason-box {
+    max-width: 300px;
+    background: var(--background);
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.reason-box h4 {
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.benefits li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #555;
+}
+
+.culture p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #666;
+}
+
+.culture-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.culture-gallery img {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .reasons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .culture-gallery img {
+        width: 100%;
+        max-width: 300px;
+    }
+}

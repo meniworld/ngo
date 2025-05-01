@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NGO - Blog</title>
+    <title>NGO - Career</title>
     <link rel="stylesheet" href="../assets/styles/common.css">
     <link rel="stylesheet" href="../assets/styles/navbar.css">
     <link rel="stylesheet" href="../assets/styles/hero-section.css">
@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="../assets/styles/privacy-policy.css">
     <link rel="stylesheet" href="../assets/styles/faq.css">
     <link rel="stylesheet" href="../assets/styles/blog.css">
-    <link rel="stylesheet" href="../assets/styles/blog-details.css">
+    <link rel="stylesheet" href="../assets/styles/career.css">
+    <link rel="stylesheet" href="../assets/styles/career-apply.css">
 </head>
 
 <body>
@@ -102,69 +103,38 @@
 
     <!-- NAV BAR END -->
 
+    <div class="job-application-container">
+        <h1>Job Application Form</h1>
+        <form class="job-application-form">
+            <label for="position">Position</label>
+            <select id="position" class="position-field" required>
+                <option value="" disabled>Select Position</option>
+                <option value="Mental Health">Mental Health</option>
+                <option value="Education Officer">Education Officer</option>
+                <option value="Marketing Executive">Marketing Executive</option>
+                <!-- Add more positions as needed -->
+            </select>
 
-    <div class="single-blog-page">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" class="name-field" placeholder="John Doe" required>
 
-        <!-- Blog Banner Image -->
-        <div class="blog-banner">
-            <img src="../assets/images/closeup-diverse-people-joining-their-hands.jpg" alt="Blog Banner">
-        </div>
+            <label for="email">Email *</label>
+            <input type="email" id="email" class="email-field" placeholder="example@mail.com" required>
 
-        <!-- Blog Content -->
-        <div class="blog-content-container">
-            <div class="blog-content">
-                <h1 class="blog-title">Empowering Women in Rural Areas</h1>
-                <div class="blog-meta">
-                    <span>Posted on Apr 28, 2025</span>
-                    <span>By Admin</span>
-                    <span>❤️ 12 Likes</span>
-                </div>
-                <div class="blog-description">
-                    <p>In today's world, women in rural areas are often forgotten, but we are changing that. Through
-                        various initiatives...</p>
-                    <p>The empowerment of women in rural areas is not just about offering education, but also providing
-                        them with opportunities...</p>
-                    <p>Our goal is to give these women the skills they need to excel in their chosen fields...</p>
-                </div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" class="phone-field" placeholder="+8801234567890">
 
-                <!-- Share Buttons -->
-                <div class="share-buttons">
-                    <span>Share this post:</span>
-                    <a href="#" class="share-icon">Facebook</a>
-                    <a href="#" class="share-icon">Twitter</a>
-                    <a href="#" class="share-icon">LinkedIn</a>
-                </div>
+            <label for="resume">Upload Resume *</label>
+            <input type="file" id="resume" class="resume-field" accept=".pdf,.doc,.docx" required>
 
-                <!-- Comments Section -->
-                <div class="comments-section">
-                    <h3>Comments (3)</h3>
-                    <div class="comment">
-                        <p><strong>John Doe:</strong> Great initiative! Keep it up!</p>
-                    </div>
-                    <div class="comment">
-                        <p><strong>Jane Smith:</strong> I love this idea. Empowering women is so important!</p>
-                    </div>
-                    <div class="comment">
-                        <p><strong>Sarah Lee:</strong> Absolutely inspiring. These stories need more attention.</p>
-                    </div>
+            <label for="coverLetter">Cover Letter</label>
+            <textarea id="coverLetter" class="coverLetter-field" rows="5"
+                placeholder="Write something about yourself..."></textarea>
 
-                    <div class="comment-form">
-                        <h4>Leave a Comment</h4>
-                        <textarea placeholder="Write your comment..."></textarea>
-                        <button class="submit-comment">Submit Comment</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Newsletter Section -->
-        <div class="newsletter">
-            <h3>Subscribe to our Newsletter</h3>
-            <p>Stay updated with our latest posts and initiatives.</p>
-            <input type="email" placeholder="Enter your email">
-            <button>Subscribe</button>
-        </div>
+            <button type="submit" class="submit-button">Submit Application</button>
+        </form>
     </div>
+
 
 
 
@@ -175,7 +145,8 @@
             <a href="partner-with-us.html"><img src="https://cdn-icons-png.flaticon.com/24/929/929416.png"
                     alt="Partner"> Partner with
                 us |</a>
-            <a href="career.html"><img src="https://cdn-icons-png.flaticon.com/24/3064/3064197.png" alt="Career"> Career |</a>
+            <a href="career.html"><img src="https://cdn-icons-png.flaticon.com/24/3064/3064197.png" alt="Career"> Career
+                |</a>
            <a href="internship.html"><img src="https://cdn-icons-png.flaticon.com/24/3135/3135765.png" alt="Internship">
                 Internship |</a>
             <a href="visit-us.html"><img src="https://cdn-icons-png.flaticon.com/24/684/684908.png" alt="Visit"> Visit

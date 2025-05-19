@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="stylesheet" href="../assets/styles/common.css">
+    <style>
+        .not-found-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .not-found-title {
+            font-size: 6rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .not-found-subtitle {
+            font-size: 1.5rem;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+        }
+
+        .not-found-text {
+            color: var(--text);
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .not-found-illustration {
+            max-width: 300px;
+            margin-bottom: 2rem;
+        }
+
+        .not-found-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .not-found-title {
+                font-size: 4rem;
+            }
+
+            .not-found-subtitle {
+                font-size: 1.25rem;
+            }
+
+            .not-found-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="not-found-container mt-180">
+        <!-- You can replace this with an actual SVG or image -->
+        <div class="not-found-illustration">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="90" fill="none" stroke="var(--primary)" stroke-width="8" />
+                <path d="M50,50 L150,150 M50,150 L150,50" stroke="var(--primary)" stroke-width="8" />
+                <circle cx="60" cy="70" r="10" fill="var(--secondary)" />
+                <circle cx="140" cy="70" r="10" fill="var(--secondary)" />
+            </svg>
+        </div>
+
+        <h1 class="not-found-title">404</h1>
+        <h2 class="not-found-subtitle">Oops! Page not found</h2>
+        <p class="not-found-text">
+            The page you're looking for doesn't exist or has been moved.
+            Please check the URL or navigate back to our homepage.
+        </p>
+
+        <div class="not-found-actions">
+            <a href="/" class="btn-primary">Go to Homepage</a>
+            <a href="javascript:history.back()" class="btn-secondary">Go Back</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="../assets/styles/common.css">
+    <style>
+        .coming-soon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .coming-soon-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .coming-soon-subtitle {
+            font-size: 1.5rem;
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+
+        .coming-soon-text {
+            color: var(--text);
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .coming-soon-illustration {
+            max-width: 300px;
+            margin-bottom: 2rem;
+        }
+
+        .coming-soon-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .coming-soon-form {
+            max-width: 400px;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 1rem;
+            border: 1px solid var(--input-border);
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .coming-soon-title {
+                font-size: 2.25rem;
+            }
+
+            .coming-soon-subtitle {
+                font-size: 1.25rem;
+            }
+
+            .coming-soon-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="coming-soon-container mt-180">
+        <!-- Illustration -->
+        <div class="coming-soon-illustration">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="90" fill="none" stroke="var(--accent)" stroke-width="8"
+                    stroke-dasharray="10,5" />
+                <path d="M100,30 L100,80 M70,55 L130,55" stroke="var(--primary)" stroke-width="8" />
+                <circle cx="100" cy="120" r="30" fill="var(--secondary)" />
+                <path d="M80,150 L120,150" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" />
+            </svg>
+        </div>
+
+        <h1 class="coming-soon-title">Coming Soon</h1>
+        <h2 class="coming-soon-subtitle">We're working on something awesome!</h2>
+        <p class="coming-soon-text">
+            Our team is hard at work building a fantastic new experience for you.
+            Check back later or sign up below to be notified when we launch.
+        </p>
+
+        <div class="coming-soon-actions">
+            <a href="/" class="btn-secondary">Back to Home</a>
+        </div>
+
+        <!-- Email Signup Form -->
+        <div class="coming-soon-form">
+            <p class="coming-soon-text">Get notified when we launch:</p>
+            <form id="notify-form">
+                <input type="email" class="form-input" placeholder="Enter your email" required>
+                <button type="submit" class="btn-primary" style="width: 100%;">Notify Me</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Form submission handler
+        document.getElementById('notify-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            // Here you would typically send the email to your server
+            alert(`Thanks! We'll notify you at ${email} when we launch.`);
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
